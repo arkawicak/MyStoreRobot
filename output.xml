@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20221012 16:49:48.913" rpa="false" schemaversion="3">
+<suite id="s1" name="Register" source="D:\Bootcamp dojobox\Web Auto Robot\Project RObot\ProjectRobotFinal\suites\register.robot">
+<test id="s1-t1" name="User Should Be Able To Register" line="7">
+<kw name="Open Browser With Google Chrome" library="DemoStore_keywordregister" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${DEMOSAUCE_URL}</arg>
+<arg>browser=${DEMOSAUCE_BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221012 16:49:49.105" level="INFO">Opening browser 'gc' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20221012 16:49:49.105" endtime="20221012 16:52:40.561"/>
+</kw>
+<status status="PASS" starttime="20221012 16:49:49.105" endtime="20221012 16:52:40.569"/>
+</kw>
+<kw name="Click Sign In Menu" library="DemoStore_keywordregister">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SignInMenu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:40.585" level="INFO">Clicking element '//*[@class="login"]'.</msg>
+<status status="PASS" starttime="20221012 16:52:40.580" endtime="20221012 16:52:49.566"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:40.578" endtime="20221012 16:52:49.566"/>
+</kw>
+<kw name="Enter Valid Email" library="DemoStore_keywordregister">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EmailRegister}</arg>
+<arg>text=arkawicak@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:49.566" level="INFO">Typing text 'arkawicak@gmail.com' into text field '//input[@id="email_create"]'.</msg>
+<status status="PASS" starttime="20221012 16:52:49.566" endtime="20221012 16:52:49.950"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:49.566" endtime="20221012 16:52:49.950"/>
+</kw>
+<kw name="Click Create An Account Button" library="DemoStore_keywordregister">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${RegisterEmail}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:49.952" level="INFO">Clicking element '//*[@id="SubmitCreate"]'.</msg>
+<status status="PASS" starttime="20221012 16:52:49.952" endtime="20221012 16:52:50.017"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:49.950" endtime="20221012 16:52:50.018"/>
+</kw>
+<kw name="Radio Button Is Selected" library="DemoStore_keywordregister">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${RadioButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221012 16:52:50.020" endtime="20221012 16:52:52.389"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>id_gender</arg>
+<arg>1</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20221012 16:52:52.390" level="INFO">Selecting '1' from radio button 'id_gender'.</msg>
+<status status="PASS" starttime="20221012 16:52:52.389" endtime="20221012 16:52:52.456"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:50.018" endtime="20221012 16:52:52.457"/>
+</kw>
+<kw name="Enter Valid FirstName" library="DemoStore_keywordregister">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FirstName}</arg>
+<arg>Text=Huyearka</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:52.457" level="INFO">Typing text 'Text=Huyearka' into text field '//input[@id='customer_firstname']'.</msg>
+<status status="PASS" starttime="20221012 16:52:52.457" endtime="20221012 16:52:52.579"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:52.457" endtime="20221012 16:52:52.579"/>
+</kw>
+<kw name="Enter Valid Password" library="DemoStore_keywordregister">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PasswordRegister}</arg>
+<arg>Text=12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:52.580" level="INFO">Typing text 'Text=12345' into text field '//input[@id='passwd']'.</msg>
+<status status="PASS" starttime="20221012 16:52:52.580" endtime="20221012 16:52:52.680"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:52.579" endtime="20221012 16:52:52.680"/>
+</kw>
+<kw name="Select Valid Days" library="DemoStore_keywordregister">
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${Days}</arg>
+<arg>18</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221012 16:52:52.681" level="INFO">Selecting options from selection list '//*[@id='days']' by value 18.</msg>
+<status status="PASS" starttime="20221012 16:52:52.680" endtime="20221012 16:52:52.754"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:52.680" endtime="20221012 16:52:52.756"/>
+</kw>
+<kw name="Select Valid Months" library="DemoStore_keywordregister">
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${Months}</arg>
+<arg>8</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221012 16:52:52.756" level="INFO">Selecting options from selection list '//*[@id='months']' by value 8.</msg>
+<status status="PASS" starttime="20221012 16:52:52.756" endtime="20221012 16:52:52.823"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:52.756" endtime="20221012 16:52:52.823"/>
+</kw>
+<kw name="Select Valid Year" library="DemoStore_keywordregister">
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${Years}</arg>
+<arg>1996</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221012 16:52:52.825" level="INFO">Selecting options from selection list '//*[@id='years']' by value 1996.</msg>
+<status status="PASS" starttime="20221012 16:52:52.824" endtime="20221012 16:52:52.896"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:52.824" endtime="20221012 16:52:52.896"/>
+</kw>
+<kw name="Select Valid Checkbox" library="DemoStore_keywordregister">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${Checkbox}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:52.899" level="INFO">Selecting checkbox '//*[@id='newsletter']'.</msg>
+<status status="PASS" starttime="20221012 16:52:52.898" endtime="20221012 16:52:53.021"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:52.898" endtime="20221012 16:52:53.021"/>
+</kw>
+<kw name="Enter Valid Firstname In Section Address" library="DemoStore_keywordregister">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FirstNameAddress}</arg>
+<arg>Text=Huyearka</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:53.021" level="INFO">Typing text 'Text=Huyearka' into text field '//input[@id='firstname']'.</msg>
+<status status="PASS" starttime="20221012 16:52:53.021" endtime="20221012 16:52:53.105"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:53.021" endtime="20221012 16:52:53.105"/>
+</kw>
+<kw name="Enter Valid Lastname In Section Address" library="DemoStore_keywordregister">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LastNameAddress}</arg>
+<arg>Text=Huyearka</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:53.108" level="INFO">Typing text 'Text=Huyearka' into text field '//input[@id='lastname']'.</msg>
+<status status="PASS" starttime="20221012 16:52:53.107" endtime="20221012 16:52:53.193"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:53.105" endtime="20221012 16:52:53.193"/>
+</kw>
+<kw name="Enter Valid Company" library="DemoStore_keywordregister">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Company}</arg>
+<arg>Text=laundry</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:53.194" level="INFO">Typing text 'Text=laundry' into text field '//input[@id='company']'.</msg>
+<status status="PASS" starttime="20221012 16:52:53.193" endtime="20221012 16:52:53.283"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:53.193" endtime="20221012 16:52:53.284"/>
+</kw>
+<kw name="Enter Valid Address" library="DemoStore_keywordregister">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Address1}</arg>
+<arg>Text=wulung</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:53.284" level="INFO">Typing text 'Text=wulung' into text field '//input[@id='address1']'.</msg>
+<status status="PASS" starttime="20221012 16:52:53.284" endtime="20221012 16:52:53.382"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:53.284" endtime="20221012 16:52:53.382"/>
+</kw>
+<kw name="Enter Valid Address2" library="DemoStore_keywordregister">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Address2}</arg>
+<arg>Text=congcat</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:53.384" level="INFO">Typing text 'Text=congcat' into text field '//input[@id='address2']'.</msg>
+<status status="PASS" starttime="20221012 16:52:53.383" endtime="20221012 16:52:53.473"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:53.383" endtime="20221012 16:52:53.473"/>
+</kw>
+<kw name="Enter Valid City" library="DemoStore_keywordregister">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${City}</arg>
+<arg>Text=jogja</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:53.474" level="INFO">Typing text 'Text=jogja' into text field '//input[@id='city']'.</msg>
+<status status="PASS" starttime="20221012 16:52:53.474" endtime="20221012 16:52:53.554"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:53.474" endtime="20221012 16:52:53.555"/>
+</kw>
+<kw name="Enter Valid State" library="DemoStore_keywordregister">
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${State}</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221012 16:52:53.555" level="INFO">Selecting options from selection list '//*[@id='id_state']' by value 3.</msg>
+<status status="PASS" starttime="20221012 16:52:53.555" endtime="20221012 16:52:53.627"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:53.555" endtime="20221012 16:52:53.627"/>
+</kw>
+<kw name="Enter Valid Postcode" library="DemoStore_keywordregister">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PostCode}</arg>
+<arg>Text=79798</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:53.627" level="INFO">Typing text 'Text=79798' into text field '//input[@id='postcode']'.</msg>
+<status status="PASS" starttime="20221012 16:52:53.627" endtime="20221012 16:52:53.726"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:53.627" endtime="20221012 16:52:53.726"/>
+</kw>
+<kw name="Enter Valid Country" library="DemoStore_keywordregister">
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${Country}</arg>
+<arg>21</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221012 16:52:53.726" level="INFO">Selecting options from selection list '//*[@id='id_country']' by value 21.</msg>
+<status status="PASS" starttime="20221012 16:52:53.726" endtime="20221012 16:52:53.834"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:53.726" endtime="20221012 16:52:53.835"/>
+</kw>
+<kw name="Enter Valid Additional" library="DemoStore_keywordregister">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Additional}</arg>
+<arg>Text=newTester</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:53.835" level="INFO">Typing text 'Text=newTester' into text field '//*[@id='other']'.</msg>
+<status status="PASS" starttime="20221012 16:52:53.835" endtime="20221012 16:52:53.942"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:53.835" endtime="20221012 16:52:53.942"/>
+</kw>
+<kw name="Enter Valid Home Phone" library="DemoStore_keywordregister">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Phone}</arg>
+<arg>Text=08177686879</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:53.944" level="INFO">Typing text 'Text=08177686879' into text field '//*[@id='phone']'.</msg>
+<status status="PASS" starttime="20221012 16:52:53.944" endtime="20221012 16:52:54.105"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:53.944" endtime="20221012 16:52:54.105"/>
+</kw>
+<kw name="Enter Valid Address Alias" library="DemoStore_keywordregister">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${AddressAlias}</arg>
+<arg>Text=jogjasleman</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:54.106" level="INFO">Typing text 'Text=jogjasleman' into text field '//*[@id='alias']'.</msg>
+<status status="PASS" starttime="20221012 16:52:54.106" endtime="20221012 16:52:54.222"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:54.105" endtime="20221012 16:52:54.222"/>
+</kw>
+<kw name="Click Register Button" library="DemoStore_keywordregister">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${RegisterButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221012 16:52:54.223" level="INFO">Clicking element '//*[@id="submitAccount"]'.</msg>
+<status status="PASS" starttime="20221012 16:52:54.223" endtime="20221012 16:52:57.908"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:54.222" endtime="20221012 16:52:57.908"/>
+</kw>
+<kw name="Close Google Chrome Browser" library="DemoStore_keywordregister" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221012 16:52:57.910" endtime="20221012 16:53:00.427"/>
+</kw>
+<status status="PASS" starttime="20221012 16:52:57.908" endtime="20221012 16:53:00.427"/>
+</kw>
+<status status="PASS" starttime="20221012 16:49:49.103" endtime="20221012 16:53:00.428"/>
+</test>
+<test id="s1-t2" name="Register Without Enter Email" line="33">
+<kw name="Open Browser With Google Chrome" library="DemoStore_keywordregister" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${DEMOSAUCE_URL}</arg>
+<arg>browser=${DEMOSAUCE_BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221012 16:53:00.437" level="INFO">Opening browser 'gc' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20221012 16:53:00.436" endtime="20221012 16:53:27.336"/>
+</kw>
+<status status="PASS" starttime="20221012 16:53:00.434" endtime="20221012 16:53:27.336"/>
+</kw>
+<kw name="Click Sign In Menu" library="DemoStore_keywordregister">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SignInMenu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221012 16:53:27.337" level="INFO">Clicking element '//*[@class="login"]'.</msg>
+<status status="PASS" starttime="20221012 16:53:27.337" endtime="20221012 16:53:33.942"/>
+</kw>
+<status status="PASS" starttime="20221012 16:53:27.337" endtime="20221012 16:53:33.942"/>
+</kw>
+<kw name="Click Create An Account Button" library="DemoStore_keywordregister">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${RegisterEmail}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221012 16:53:33.943" level="INFO">Clicking element '//*[@id="SubmitCreate"]'.</msg>
+<status status="PASS" starttime="20221012 16:53:33.942" endtime="20221012 16:53:33.999"/>
+</kw>
+<status status="PASS" starttime="20221012 16:53:33.942" endtime="20221012 16:53:33.999"/>
+</kw>
+<kw name="Verify Error Message Is Appears" library="DemoStore_keywordregister">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ErrorMessage}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221012 16:53:34.001" endtime="20221012 16:53:35.571"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${ErrorMessage}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221012 16:53:35.589" level="INFO">Element '//*[@id="create_account_error"]' is displayed.</msg>
+<status status="PASS" starttime="20221012 16:53:35.571" endtime="20221012 16:53:35.589"/>
+</kw>
+<status status="PASS" starttime="20221012 16:53:34.001" endtime="20221012 16:53:35.589"/>
+</kw>
+<kw name="Close Google Chrome Browser" library="DemoStore_keywordregister" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221012 16:53:35.589" endtime="20221012 16:53:37.826"/>
+</kw>
+<status status="PASS" starttime="20221012 16:53:35.589" endtime="20221012 16:53:37.826"/>
+</kw>
+<status status="PASS" starttime="20221012 16:53:00.433" endtime="20221012 16:53:37.826"/>
+</test>
+<status status="PASS" starttime="20221012 16:49:48.913" endtime="20221012 16:53:37.847"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Register">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

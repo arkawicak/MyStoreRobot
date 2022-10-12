@@ -1,0 +1,4 @@
+Username: //input[@id="user-name"]
+Password: //input[@id="password"]
+Login: //*[@id="login-button"]
+ErrorMessage: //*[contains(@class,'error-message-container')]
